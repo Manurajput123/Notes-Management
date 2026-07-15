@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, "public")));
 /* ===========================
    MongoDB Connection
 =========================== */
+
 require("dotenv").config();
 
 mongoose.connect(process.env.MONGO_URI)
