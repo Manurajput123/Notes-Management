@@ -17,18 +17,17 @@ app.use(express.static(path.join(__dirname, "public")));
 =========================== */
 require("dotenv").config();
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => {
 
-.then(() => {
+        console.log("MongoDB Connected");
 
-    console.log("MongoDB Connected");
+    })
+    .catch((error) => {
 
-})
-.catch((error) => {
+        console.log(error);
 
-    console.log(error);
-
-});
+    });
 
 /* ===========================
    Schema
