@@ -15,8 +15,10 @@ app.use(express.static(path.join(__dirname, "public")));
 /* ===========================
    MongoDB Connection
 =========================== */
+require("dotenv").config();
 
-mongoose.connect("mongodb+srv://chauhanhimanshu0203_db_user:Ty7xA48mfHY9Wxg5@cluster0.phqqdsh.mongodb.net/?appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI);
+
 .then(() => {
 
     console.log("MongoDB Connected");
