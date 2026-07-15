@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Journal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header class="hero">
+
+        <h1>Smart Journal</h1>
+
+        <p>
+            Keep your daily thoughts organized in one simple place.
+        </p>
+
+    </header>
+
+    <main class="layout">
+
+        <section class="panel">
+
+            <h2>Create Entry</h2>
+
+            <form id="journalForm">
+
+                <div class="field">
+
+                    <label for="entryDate">
+                        Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="entryDate"
+                        required
+                    >
+
+                </div>
+
+                <div class="field">
+
+                    <label for="entryTitle">
+                        Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="entryTitle"
+                        placeholder="Enter journal title"
+                        required
+                    >
+
+                </div>
+
+                <div class="field">
+
+                    <label for="entryDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="entryDescription"
+                        placeholder="Write your journal entry..."
+                        required
+                    ></textarea>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="save-btn"
+                >
+                    Add Entry
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="top-row">
+
+                <h2>Journal Entries</h2>
+
+                <div class="filter-box">
+
+                    <input
+                        type="date"
+                        id="searchDate"
+                    >
+
+                    <button
+                        id="resetFilter"
+                        type="button"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div
+                id="entryContainer"
+                class="entry-container"
+            >
+
+                <div class="empty-state">
+
+                    No journal entries available.
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
