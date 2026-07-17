@@ -1,3 +1,5 @@
+https://sturdy-space-barnacle-69p9w5x6rrw93rrr5-3000.app.github.dev/
+
 # Smart Journal
 
 A lightweight web application for creating, organizing, and managing personal journal entries. It provides a clean interface for adding notes, browsing saved entries, filtering them by date, and removing entries whenever needed.
